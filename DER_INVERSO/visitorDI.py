@@ -1,28 +1,16 @@
 from antlr4 import *
-from GRAMATICA.derNormalParser import derNormalParser
-from GRAMATICA.derNormalVisitor import derNormalVisitor
+from GRAMATICA.derInversoParser import derInversoParser
+from GRAMATICA.derInversoVisitor import derInversoVisitor
 
-class VisitorDN(derNormalVisitor):
-    def visitPrograma(self, ctx:derNormalParser.ProgramaContext):
+class VisitorDI(derInversoVisitor):
+    def visitPrograma(self, ctx:derInversoParser.ProgramaContext):
         return self.visit(ctx.expresion())
 
-    def visitExpresion(self, ctx:derNormalParser.ExpresionContext):
+    def visitExpresion(self, ctx:derInversoParser.ExpresionContext):
         if ctx.getChildCount() ==1:
             return self.visit(ctx.factor())
         left = self.visit(ctx.factor())
         right = self.visit(ctx.expresion())
-        
-        if ctx.SUM():
-            return left + right
-        else:
-            return left - right
-
-    def visitFactor(self, ctx:derNormalParser.FactorContext):
-        if ctx.getChildCount() == 1:
-            return self.visit(ctx.term())
-        
-        left = self.visit(ctx.term())
-        right = self.visit(ctx.factor())
         
         if ctx.MUL():
             return left * right
@@ -35,6 +23,18 @@ class VisitorDN(derNormalVisitor):
                 return int(result)
             
             return result
+
+    def visitFactor(self, ctx:derInversoParser.FactorContext):
+        if ctx.getChildCount() == 1:
+            return self.visit(ctx.term())
+        
+        left = self.visit(ctx.term())
+        right = self.visit(ctx.factor())
+        
+        if ctx.SUM():
+            return left + right
+        else:
+            return left - right
 
     def visitTerm(self, ctx):
         text = ctx.NUM().getText()
