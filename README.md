@@ -250,7 +250,7 @@ grun <gramatica> programa -gui
     50  / 5  +   6
        10    +   6  = 16
 ```
--- 
+- 
 izqNormal: <img width="376" height="414" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/2c5100bf-9504-425d-b769-9bd0162b76ee" />
  --
 
