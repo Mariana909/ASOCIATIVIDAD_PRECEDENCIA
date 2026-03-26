@@ -284,13 +284,13 @@ grun <gramatica> programa -gui
 
 > **Espacio para capturas:** una vez generados los árboles con `grun -gui`, agregar aquí las capturas de pantalla de cada versión para complementar el análisis textual.
 
-!-- izqNormal: <img width="376" height="414" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/2c5100bf-9504-425d-b769-9bd0162b76ee" />
+-- izqNormal: <img width="376" height="414" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/2c5100bf-9504-425d-b769-9bd0162b76ee" />
  --
-!-- izqInverso: <img width="387" height="399" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/dad1f400-4d29-44fc-ae2e-56d4f929aac5" />
+-- izqInverso: <img width="387" height="399" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/dad1f400-4d29-44fc-ae2e-56d4f929aac5" />
  --
-!-- derNormal:  <img width="442" height="481" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/d114924c-e134-465d-96ca-5bc58ebd2c5b" />
+-- derNormal:  <img width="442" height="481" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/d114924c-e134-465d-96ca-5bc58ebd2c5b" />
  --
-!-- derInverso: <img width="508" height="548" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/fc526b1c-616a-4da5-9ae9-54b0261b2734" />
+-- derInverso: <img width="508" height="548" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/fc526b1c-616a-4da5-9ae9-54b0261b2734" />
  --
 
 ---
