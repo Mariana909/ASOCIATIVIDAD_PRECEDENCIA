@@ -1,4 +1,4 @@
-grammar izqNormal;
+grammar derNormal;
 
 programa: expresion EOF;
 
@@ -9,8 +9,8 @@ expresion
     ;
 
 factor
-    : factor MUL term
-    | factor DIV term
+    : term MUL factor
+    | term DIV factor
     | term
     ;
 
@@ -19,15 +19,9 @@ term
     | RES NUM
     ;
 
-SUM: '+';
-RES: '-';
-MUL: '*';
-DIV: '/';
-
+SUM: '+'; RES: '-'; MUL: '*'; DIV: '/';
 NUM: DECIMAL | ENTERO;
-DECIMAL: DIGITO+ '.' DIGITO+; 
+DECIMAL: DIGITO+ '.' DIGITO+;
 ENTERO: DIGITO+;
-
 fragment DIGITO: [0-9];
-
 WS: [ \t]+ -> skip;

@@ -4,19 +4,19 @@ import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from antlr4 import *
-from IZQ_NORMAL.visitorIN import VisitorIN
-from GRAMATICA.izqNormalLexer import izqNormalLexer
-from GRAMATICA.izqNormalParser import izqNormalParser
+from DER_NORMAL.visitorDN import VisitorDN
+from GRAMATICA.derNormalLexer import derNormalLexer
+from GRAMATICA.derNormalParser import derNormalParser
 
 def evaluar(expresion):
     input_stream = InputStream(expresion)
-    lexer = izqNormalLexer(input_stream)
+    lexer = derNormalLexer(input_stream)
     tokens = CommonTokenStream(lexer)
-    parser = izqNormalParser(tokens)
+    parser = derNormalParser(tokens)
     
     tree = parser.programa() 
     
-    visitor = VisitorIN()
+    visitor = VisitorDN()
     return visitor.visit(tree)
 
 if __name__ == "__main__":
