@@ -241,6 +241,8 @@ grun <gramatica> programa -gui
 # Presionar Ctrl+D
 ```
 
+---
+
 #### izqNormal — resultado: 16
 
 `*/÷` tiene mayor precedencia y se agrupa por la izquierda:
