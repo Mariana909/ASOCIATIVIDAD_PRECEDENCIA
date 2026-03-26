@@ -250,8 +250,10 @@ grun <gramatica> programa -gui
     50  / 5  +   6
        10    +   6  = 16
 ```
-- 
-izqNormal: <img width="376" height="414" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/2c5100bf-9504-425d-b769-9bd0162b76ee" />
+ 
+Árbol izqNormal:
+
+<img width="376" height="414" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/2c5100bf-9504-425d-b769-9bd0162b76ee" />
  --
 
 #### izqInverso — resultado: 12.5
@@ -263,8 +265,10 @@ izqNormal: <img width="376" height="414" alt="antlr4_parse_tree" src="https://gi
   50    /   8   * 2
        6.25    * 2   = 12.5
 ```
--- 
-izqInverso: <img width="387" height="399" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/dad1f400-4d29-44fc-ae2e-56d4f929aac5" />
+
+Árbol izqInverso: 
+
+<img width="387" height="399" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/dad1f400-4d29-44fc-ae2e-56d4f929aac5" />
  --
 
 #### derNormal — resultado: 256
@@ -276,8 +280,10 @@ izqInverso: <img width="387" height="399" alt="antlr4_parse_tree" src="https://g
 100 /  0.4  +   6
     250     +   6   = 256
 ```
--- 
-derNormal:  <img width="442" height="481" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/d114924c-e134-465d-96ca-5bc58ebd2c5b" />
+
+Árbol derNormal: 
+
+<img width="442" height="481" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/d114924c-e134-465d-96ca-5bc58ebd2c5b" />
  --
 
 #### derInverso — resultado: 800
@@ -290,8 +296,10 @@ derNormal:  <img width="442" height="481" alt="antlr4_parse_tree" src="https://g
 100 / (0.25     * 2)
 100 /      0.125      = 800
 ```
--- 
-derInverso: <img width="508" height="548" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/fc526b1c-616a-4da5-9ae9-54b0261b2734" />
+ 
+Árbol derInverso: 
+
+<img width="508" height="548" alt="antlr4_parse_tree" src="https://github.com/user-attachments/assets/fc526b1c-616a-4da5-9ae9-54b0261b2734" />
  --
 
 ---
